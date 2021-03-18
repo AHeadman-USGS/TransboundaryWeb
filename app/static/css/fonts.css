@@ -1,0 +1,58 @@
+/*
+ * Web Fonts from fontspring.com
+ *
+ * All OpenType features and all extended glyphs have been removed.
+ * Fully installable fonts can be purchased at http://www.fontspring.com
+ *
+ * The fonts included in this stylesheet are subject to the End User License you purchased
+ * from Fontspring. The fonts are protected under domestic and international trademark and
+ * copyright law. You are prohibited from modifying, reverse engineering, duplicating, or
+ * distributing this font software.
+ *
+ * (c) 2010-2017 Fontspring
+ *
+ *
+ *
+ *
+ * The fonts included are copyrighted by the vendor listed below.
+ *
+ * Vendor:      Wiescher-Design
+ * License URL: https://www.fontspring.com/licenses/wiescher-design/webfont
+ *
+ *
+ */
+
+
+@font-face {
+    font-family: 'Novecentosanswide-Bold';
+    src: url('Novecentosanswide-Bold-webfont.woff2') format('woff2'),
+         url('Novecentosanswide-Bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'Novecentosanswide-DemiBold';
+    src: url('Novecentosanswide-DemiBold-webfont.woff2') format('woff2'),
+         url('Novecentosanswide-DemiBold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'Novecentosanswide-Light';
+    src: url('Novecentosanswide-Light-webfont.woff2') format('woff2'),
+         url('Novecentosanswide-Light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'Novecentosanswide-Normal';
+    src: url('Novecentosanswide-Normal-webfont.woff2') format('woff2'),
+         url('Novecentosanswide-Normal-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
