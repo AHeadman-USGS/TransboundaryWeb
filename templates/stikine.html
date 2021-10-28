@@ -1,0 +1,132 @@
+{% extends "base.html" %}
+
+{% block title %}Home{% endblock %}
+{% block content %}
+<main>
+  <body id="page-top">
+
+  <!-- BEGIN USGS Applications Header Template -->
+  <header id="navbar" class="header-nav" role="banner">
+    <div class="tmp-container">
+      <div class="header"> <a class="logo-header" href="https://www.usgs.gov/index.html" title="Home">
+        <img class="img" src="static/img/logo.png" alt="Home"/>
+      </a>
+      </div>
+    </div>
+    <!-- end header-container-->
+  </header>
+  <nav id="mainNav" class="navbar navbar-default subnav affix-top">
+    <div class="container-fluid">
+      <div class="navbar-header page-scroll">
+        <a class="navbar-brand" href="{{ url_for("index") }}">Home</a>
+        <a class="navbar-brand" href="{{ url_for("alaska") }}">Alaska</a>
+        <a class="navbar-brand" href="{{ url_for("washington") }}">Washington</a>
+        <a class="navbar-brand" href="{{ url_for("id_mt") }}">Idaho-Montana</a>
+
+      </div>
+
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-right">
+          <li>
+            <a href="#science_centers">USGS Science Centers</a>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="jumbotron_stik"> </div>
+  <section id="title">
+    <div class="container-fluid">
+      <div class="row">
+        <h1>Stikine Watershed</h1>
+      </div>
+    </div>
+  </section>
+  <section id="text">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <p class="lead">The Stikine River drains a 50893 square kilometer watershed. The Stikine River arises in the Stikine Plateau of British Columbia and flows through the Boundary Ranges where it is joined near the international border by the Iskut River, a major tributary that drains southwest from the Skeena Mountains.</p>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <h2>Background</h2>
+          <p>The Stikine watershed is asserted as the traditional territory of the Tahltan people, as well as the Tlingit Shtax’heen Kwaan in the Iskut basin, and the Liard First Nation, Ross River Dena Council, and Kaska Dena Council in the eastern uplands. The small Alaskan portion of the watershed is protected as part of Tongass National Forest, part of which is managed as the Stikine-LeConte Wilderness. Twenty-four conserved areas in Canada range in size with the largest, Spatsizi Plateau Wilderness Provincial Park, located in the eastern headwaters of the watershed. Mount Edziza Provincial Park and the Todagin Wildlife Management Area cover much of the center of the watershed, while the Stikine River Park protects the upper river corridor.</p>
+          <figure>
+            <img src="static/img/stik_1.jpg" style="width:100%", class="center">
+            <figcaption>Stikine river at twilight.</figcaption>
+          </figure>
+          <br><br>
+          <p>The region remains sparsely developed; Dease Lake and Telegraph Creek are small communities in British Columbia connected to the Stewart-Cassiar Highway. Gold rushes brought miners to the basin in the 1860’s and precious metal mining continues today. One large-scale mine currently operates in the watershed, while three projects are in the exploration and permitting phases of development. Mining ventures in the watershed target gold, copper, and silver ores. A proposed hydroelectric project on More Creek, a tributary which drains to the Stikine via the Iskut, is currently undergoing environmental review.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="jumbotron_2_stik"></div>
+  <section id="container2">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <h2>Research and Data</h2>
+          <p>The USGS operates a streamgage near the mouth of the Stikine River. Data including stream flow conditions, continuous water quality monitoring, and discrete water quality sampling are available on NWIS.</p>
+          <figure>
+            <img src="static/img/stik_2.jpg" style="width:100%", class="center">
+            <figcaption>Preparing to take measurements in a USGS sampling boat.</figcaption>
+          </figure>
+          <br><br>
+          <p>USGS field crews travel to the Stikine a few times each year to collect additional samples near the United States – Canadian Border. Data is available through the <a href="https://waterdata.usgs.gov/nwis/inventory/?site_no=15024740&agency_cd=USGS&amp;">National Water Information System (NWIS)</a>. </p>
+          <figure>
+            <img src="static/img/stik_3.jpg" style="width:100%", class="center">
+            <figcaption>A USGS scientist packages a sample on a gravel bar on the Stikine River.</figcaption>
+          </figure>
+          <br><br>
+          <p>The graphs below reflect the data published on NWIS –data tables, graphs, and statistics directly are available to download there.</p>
+          <!--graphs? -->
+          <img src="static/img/placeholder.jpg" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="jumbotron_3_stik"></div>
+  <section id="science_centers">
+      <div class="container">
+        <div class="row">
+          <br>
+          <div class="col-sm-12">
+            <h2>Partners and Cooporators</h2>
+            <ul>
+              <li><a href="#">Coop link 1</a></li>
+              <li><a href="#">Coop link 2</a></li>
+              <li><a href="#">Coop link 3</a></li>
+              <li><a href="#">Coop link 4</a></li>
+            </ul>
+            <br><br>
+          </div>
+        </div>
+      </div>
+    <div class="container">
+      <div class="row">
+        <br>
+        <div class="col-sm-12">
+          <h2>Other Alaska Projects</h2>
+          <ul>
+            <li><a href="{{ url_for("alsek") }}">Alsek</a></li>
+            <li><a href="{{ url_for("unuk") }}">Unuk</a></li>
+            <li><a href="{{ url_for("taku") }}">Taku</a></li>
+            <li><a href="{{ url_for("salmon") }}">Salmon</a></li>
+            <li><a href="{{ url_for("alaska") }}">Alaska Home Page</a></li>
+          </ul>
+
+        </div>
+      </div>
+    </div>
+  </section>
+  </body>
+</main>
+{% endblock %}

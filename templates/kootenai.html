@@ -1,0 +1,188 @@
+{% extends "base.html" %}
+
+{% block title %}Home{% endblock %}
+{% block content %}
+<main>
+    <body id="page-top">
+
+    <!-- BEGIN USGS Applications Header Template -->
+    <header id="navbar" class="header-nav" role="banner">
+        <div class="tmp-container">
+            <div class="header"> <a class="logo-header" href="https://www.usgs.gov/index.html" title="Home">
+                <img class="img" src="static/img/logo.png" alt="Home"/>
+            </a>
+            </div>
+        </div>
+        <!-- end header-container-->
+    </header>
+    <nav id="mainNav" class="navbar navbar-default subnav affix-top">
+        <div class="container-fluid">
+            <div class="navbar-header page-scroll">
+                <a class="navbar-brand" href="{{ url_for("index") }}">Home</a>
+                <a class="navbar-brand" href="{{ url_for("alaska") }}">Alaska</a>
+                <a class="navbar-brand" href="{{ url_for("washington") }}">Washington</a>
+                <a class="navbar-brand" href="{{ url_for("id_mt") }}">Idaho-Montana</a>
+
+            </div>
+
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="#science_centers">USGS Science Centers</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="jumbotron_mt"> </div>
+    <section id="title">
+        <div class="container-fluid">
+            <div class="row">
+                <h1>Kootenai River Watershed</h1>
+            </div>
+        </div>
+    </section>
+    <section id="text">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <p class=”lead”>The Kootenai River (Kootenay when in Canada) originates from the Northern Rocky Mountains in southwestern British Columbia. It arcs south through Montana and Idaho before turning north back into British Columbia where it joins the Columbia River just beyond Lake Kootenay.</p>
+                    <p>The Kootenai River and its tributaries are home to a diversity of aquatic organisms including culturally important, threatened, and endangered species such as white sturgeon and bull trout. The sedimentary rocks forming the Northern Rockies contain rich coal deposits that have been mined for many decades.</p>
+                    <p>The coal beds and associated rock layers are enriched with other minerals as well, and in the last two decades elevated concentrations of selenium in downstream waters have raised concerns. Selenium is nutritionally essential in minuscule amounts, but in excess it is an environmental contaminant known to bioaccumulate and cause reproductive effects in fish and wildlife. The USGS is conducting studies to better understand selenium in the Kootenai transboundary watershed.</p>
+                    <br><br>
+                </div>
+
+            </div>
+        </div>
+
+        <!--- map goes here.leaflet--->
+
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h2>History and Overview</h2>
+                    <p>The Kootenai River originates in the Northern Rocky Mountains physiographic region, in southwestern British Columbia. The river is impounded along with the Elk and Bull Rivers by Libby Dam forming the transboundary reservoir Lake Koocanusa. The Columbia River Treaty between the United States and Canada led to the construction of Libby Dam in 1972 as part of a cooperative effort to manage the water resources of the Columbia River watershed. The reservoir has a volume of 7.16 km3 and provides flood storage, hydroelectric power production, and recreation benefits. The 148-km reservoir straddles the United States - Canadian border and impounds water from about 23,271 km2, or 47 percent, of the Kootenai River watershed.</p>
+                    <p>Downstream of Libby Dam, the Kootenai River flows through northwestern Montana and northeastern Idaho before crossing the international border back into British Columbia where it joins the Columbia River. The transboundary Kootenai watershed contains critical habitat for the threatened bull trout and genetically pure westslope cutthroat. The river basin also serves a vital role in maintaining adequate flows and water quality for several endangered salmon and steelhead runs in the Columbia River. The Kootenai River below the reservoir provides critical habitat for the white sturgeon (Acipenser transmontanus) (Paragamian, 2012), which was listed as endangered in this river during 1994 through the U.S. Endangered Species Act</p>
+                    <figure>
+                    <img src="static/img/ak_main_1.jpg" style="width:100%", class="center">
+                    <figcaption>Boats docked in Southeast Alaska</figcaption>
+                    </figure>
+                    <br><br>
+                    <p>The Northern Rocky Mountains consist of layers of uplifted sedimentary rocks including high-grade coal. Historical and present-day mining operations extract and process coal in portions of the Kootenai River and its tributaries, notably the Elk and Fording Rivers. These mining operations generate large volumes of waste rock which is stored valley drainages or open pits. Runoff from waste rock can mobilize selenium (Se) and other substances including mercury, nitrate, and sulfate. Selenium is a naturally occurring element that is necessary for living organisms in tiny amounts, but in higher concentrations adversely affects the health of a broad range of species. It becomes concentrated in the food chain, especially in lakes. When enriched in habitats, selenium can cause spinal deformities in fish impacting their survival in nature and can impede the reproduction of certain species of fish (Janz et al. 2010; USEPA 2016b; Johnson et al. 2020).</p>
+                    <p>The Montana Department of Environmental Quality (MT DEQ) has identified Lake Koocanusa as threatened by selenium and listed the water body under Section 303 (d) of the US Clean Water Act. A single water treatment plant designed to remove selenium is currently (2019) operating in the Elk River watershed, with additional treatment plants planned for the future (Teck Coal Limited, 2018). The U.S. State Department and the Department of Interior are actively engaged in this high visibility transboundary issue.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="jumbotron_2_mt"></div>
+    <section id="container2">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h2>USGS Science</h2>
+                    <p>The USGS is contributing scientific expertise to help stakeholders in the Kootenai basin answer several questions. This body of research is guided by the following questions:
+                    <ul>
+                        <li>What are the current water quality conditions in the Kootenai watershed?</li>
+                        <li>What is the nature and extent of selenium pollution in the watershed? </li>
+                        <li>How does selenium travel and behave throughout freshwater food webs? </li>
+                        <li>What are the most appropriate monitoring techniques to clarify selenium risk to aquatic communities, and to provide stakeholders with actionable data and information?</li>
+                    </ul>
+                    </p>
+
+                    <figure>
+                    <img src="static/img/mt_main_2.jpg" style="width:100%", class="center">
+                    <figcaption>USGS streamgaging equipment installed on the edge of the Kootenai River measures discharge and water quality.</figcaption>
+                    </figure>
+                    <br><br>
+                    <p>Several studies examining these questions are published or underway. They can be generalized into three categories:</p>
+                    <ul><li><p class="lead">Water quality monitoring:</p>
+                    <p>Water quality data are collected by the USGS and several other agencies in the Kootenai watershed. These data are available through NWIS and form the basis for watershed-scale assessments of selenium and other water quality trends. Based on data compiled by the USGS and MT DEQ, annual selenium loads entering Lake Koocanusa from the Elk and Fording rivers in Canada have increased from 2,600 kg in 1992 to over 13,000 kg in 2012, representing more than a 5-fold increase over 20 years.</p>
+                    <p>Scientists continue to collect water quality information at a network of stream gages and non-gaged locations throughout the watershed. These measurements will inform and refine selenium and nutrient loading determinations. Water quality is not uniform throughout the water column, especially in stratified water bodies like Lake Koocanusa where density differentials inhibit mixing. To obtain water quality data at multiple depths, specially equipped platforms are positioned in Lake Koocanusa. They provide near-real time data, which can be viewed through the national water quality information system LINK TO NWIS.</p></li>
+                    <figure>
+                    <img src="static/img/monitorplatform.png" style="width:100%", class="center">
+                    <figcaption>Schematic diagram of proposed point-of-compliance monitoring platform installed on Lake Koocanusa at the international boundary. Monitoring components include: (1) Syringe Sipper water-sampling system (yellow circles); (2) diffusive gradients in thin film samplers (blue squares); (3) automated water-quality sonde profiling system (YSI EXO 2); and (4) multi-cell doppler current profiler and lake level monitor (Sontek SR).</figcaption>
+                    </figure>
+                    <br><br>
+                    <li><p class="lead">Biotic Monitoring</p>
+                    <p>The USGS works with partners to collect biological samples from aquatic organisms throughout the Kootenai watershed. A <a href="https://www.sciencebase.gov/catalog/item/5d3b6ef1e4b01d82ce8d7aef">2018 study</a> showed that selenium concentrations in fish from the Kootenai river were elevated relative to fish in other rivers, with some fish exceeding relevant water quality criteria.  A 2018-2019 study generated further baseline data on selenium and mercury concentrations in fish tissue of the Kootenai River and principal tributaries in Montana and Idaho. Current efforts seek to replicate past fish tissue sampling, establish further reference sites, and conduct spring-season sampling.</p>
+                    <p>Scientists are experimenting with novel methods for collecting and analyzing biological samples. For instance, algae represent a large tropic step in the concentration of selenium in the food web. However, collecting algae samples from rivers is not a simple task since algae grows in thin films on rocks. Scientists at the Idaho Water Science Center have developed three methods for collecting algae samples from rivers. This type of analysis not only generates robust data for understanding selenium movement in the Kootenai system, it contributes more broadly to establishing scientific best-practices. Another area of active research is comparison of selenium and other constituent concentrations between different tissues in the same fish species. Each tissue has the potential to accumulate selenium in different concentrations, with implications for fish health. Because there are limited tissues on these tiny fish, USGS laboratory scientists are developing new methods for doing low-mass, high precision analysis of samples. </p>
+                    </li>
+                    <figure>
+                    <img src="static/img/ak_main_3.jpg" style="width:100%", class="center">
+                    <figcaption>USGS biologist dips for benthic invertebrates.</figcaption>
+                    </figure>
+                    <br><br>
+                    <li><p class="lead">Food web research:</p>
+                    <p>In order to comprehensively evaluate the ecological risks of selenium in the aquatic environments, it is necessary to understand bioaccumulation and trophic transfer. USGS biologists are engaged in several projects examining selenium concentrations in organisms to better understand selenium pathways through aquatic food webs. Research indicates that the dietary route of exposure generally dominates bioaccumulation processes. This is important because the traditional ways of predicting bioaccumulation and toxicity in aquatic animals on the basis of exposure to water concentrations do not work for selenium, necessitating new research. </p>
+                    <p>The USGS has published data and reports in support of ecosystem-scale selenium modeling. This effort aims to provide an ecosystem-scale model that illustrates the site-specific range of potential selenium exposure and bioaccumulation that can inform the basis for regulatory decision-making. The biodynamic model requires information not only on dissolved selenium, but on other ecosystem compartments as well including particulate material, invertebrates, fish, and wildlife. The modeling approach brings together the main concerns involved in selenium toxicity: likelihood of high exposure, inherent species sensitivity, and close connectivity of ecosystem characteristics and behavioral ecology of predators. This approach leaves room for model refinement as more data become available and understanding of the system improves. </p>
+                    </li></ul>
+                    <!-- image of the table, or table.  whatever is easier -->
+                    <figure>
+                    <img src="static/img/coalfish.png" style="width:100%", class="center">
+                    <figcaption>Conceptual food web model of pathways of selenium releases and transformation; the food web monitoring will address steps 1-4 in the diagram: dissolved Se to different fish tissues.  Expected increases are by far the greatest from Steps 1 to 2 (water to biofilm) are on the order of 500-2000X; expected increases from Steps 2 to 3 (biofilm to insects) are expected to be in the range of 1 to 4X; expected increases from Steps 3 to 4X (insects to fish), are expected to be around 1 to 3X, depending on species and tissue type. </figcaption>
+                    </figure>
+                    <br><br>
+                </div>
+            </div>
+        </div>
+
+    </section>
+  <div class="jumbotron_3_mt"></div>
+  <section id="text">
+      <div class="container">
+        <div class="row">
+          <br>
+          <div class="col-sm-12">
+            <h2>Project Links</h2>
+            <ul>
+              <li><a href="https://www.usgs.gov/centers/wy-mt-water/science/lake-koocanusa-water-quality?qt-science_center_objects=9#qt-science_center_objects ">Lake Koocanusa Water Quality</a></li>
+              <li><a href="https://www.usgs.gov/centers/id-water/science/kootenai-river-water-quality-monitoring-related-transboundary-coal-mining?qt-science_center_objects=0#qt-science_center_objects">Kootenai River Water Quality</a></li>
+              <li><a href="https://www.usgs.gov/centers/wy-mt-water ">Wyoming-Montana Water Science Center</a></li>
+              <li><a href="https://www.usgs.gov/centers/id-water">Idaho Water Science Center</a></li>
+            </ul>
+            <br><br>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+            <br>
+            <div class="col-sm-12">
+                <h2>Partners and Cooporators</h2>
+                <ul>
+                    <li><a href="http://www.usace.army.mil/">U.S. Army Corps of Engineers</a></li>
+                    <li><a href="http://www.epa.gov/">U.S. Environmental Protection Agency</a></li>
+                    <li><a href="http://www.fws.gov/">U.S Fish and Wildlife Service</a></li>
+                    <li><a href="http://deq.mt.gov/">Montana Department of Environmental Quality</a></li>
+                    <li><a href="http://fwp.mt.gov/">Montana Department of Fish, Wildlife and Parks</a></li>
+                    <li><a href="http://www.kootenai.org/">Kootenai Tribe of Idaho</a></li>
+                    <li><a href="http://fishandgame.idaho.gov/">Idaho Department of Fish and Game</a></li>
+                </ul>
+                <br><br>
+            </div>
+        </div>
+    </div>
+      <div class="container">
+        <div class="row">
+          <br>
+          <div class="col-sm-12">
+            <h2>NWIS Data links</h2>
+            <ul>
+                <li>USGS gage 12301933 (Kootenai River below Libby Dam)</li>
+                <li>USGS gage 12305000 (Kootenai River at Leonia)</li>
+                <li>USGS gage 12310100 (Kootenai River at Tribal Hatchery)</li>
+                <li>USGS gage 12322000 (Kootenai River at Porthill)</li>
+                <li>USGS gage 12302055 (Fisher River near Libby MT)</li>
+                <li>USGS gage 12304500 (Yaak River near Troy MT)</li>
+                <li>USGS site ID 12307750 (Moyie River near mouth)</li>
+            </ul>
+
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</main>
+{% endblock %}

@@ -1,0 +1,156 @@
+{% extends "base.html" %}
+
+{% block title %}Home{% endblock %}
+{% block content %}
+<main>
+    <body id="page-top">
+
+    <!-- BEGIN USGS Applications Header Template -->
+    <header id="navbar" class="header-nav" role="banner">
+        <div class="tmp-container">
+            <div class="header"> <a class="logo-header" href="https://www.usgs.gov/index.html" title="Home">
+                <img class="img" src="static/img/logo.png" alt="Home"/>
+            </a>
+            </div>
+        </div>
+        <!-- end header-container-->
+    </header>
+    <nav id="mainNav" class="navbar navbar-default subnav affix-top">
+        <div class="container-fluid">
+            <div class="navbar-header page-scroll">
+                <a class="navbar-brand" href="{{ url_for("index") }}">Home</a>
+                <a class="navbar-brand" href="{{ url_for("alaska") }}">Alaska</a>
+                <a class="navbar-brand" href="{{ url_for("washington") }}">Washington</a>
+                <a class="navbar-brand" href="{{ url_for("id_mt") }}">Idaho-Montana</a>
+
+            </div>
+
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="#science_centers">USGS Science Centers</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="jumbotron_ak"> </div>
+    <section id="title">
+        <div class="container-fluid">
+            <div class="row">
+                <h1>Alaska Transboundary Watersheds</h1>
+            </div>
+        </div>
+    </section>
+    <section id="text">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <p class="lead">
+                        The Alsek, Taku, Stikine, Unuk and Salmon rivers originate in Canada and flow through Southeast Alaska before entering the Pacific Ocean. Steep mountain ranges scatter the landscape and glaciers fill valleys and fjords between peaks. Mountain ridges define the boundaries between watersheds, dictating which path precipitation takes on its downward journey to the sea. Amidst the rugged topography and harsh climate, the region supports many ecosystems including taiga, mixed forests, scrublands, and grasslands. The United State – Canada international border traces northwest along the aptly named Boundary Ranges, forming the coastal region known as the Alaska Panhandle to the west. In Canada, the province of British Columbia is separated along the 60° parallel from the Yukon Territory to the north.</p>
+                <br><br>
+                </div>
+
+            </div>
+        </div>
+
+        <!--- map goes here.leaflet--->
+
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h2>History and Overview</h2>
+                    <p>For thousands of years, Indigenous peoples have called this land and its rivers home. An abundance of marine resources, terrestrial mammals, and diverse vegetation sustained their cultures and many of these traditional practices are carried on today. The arrival of European traders in the 1700’s initiated an era of natural resource extraction and exportation. The fur trade and mining started first, and timber harvest, commercial fishing, and tourism soon followed.</p>
+                    <p>Today, communities along the Alaskan coastline are connected by ferry and plane, while a highway system connects several communities in the Canadian interior. Tongass National Forest, including two wilderness units, conserves much of the land on the Alaskan side of the border while a variety of National and Provincial parks and conservation areas protect land in Canada. Rivers continue to support customary and traditional, recreational, and commercial salmon fisheries. Salmon fisheries contribute an estimated $1 billion to the regional economy annually.</p>
+                    <figure>
+                    <img src="static/img/ak_main_1.jpg" style="width:100%", class="center">
+                    <figcaption>Boats docked in Southeast Alaska</figcaption>
+                    </figure>
+                    <br><br>
+                    <p>While the Yukon region spurred the famous Klondike Gold Rush, the Southeast transboundary region also attracted droves of prospectors in the late 1800’s. In addition to placer gold operations on rivers, mining ventures extracted copper, gold, silver, and lead from bedrock deposits. Over the course of millions of years, land masses (known as terranes) crashed into the continent introducing new material, initiating volcanism, and applying enough heat and pressure to metamorphize rocks. These processes concentrated precious metals such as copper, gold, silver, and zinc into geologic deposits that occur primarily in a region in British Columbia known colloquially as the “Golden Triangle”. </p>
+                    <p>The recently completed Northwest Transmission Line has brought power to the southern transboundary region and accelerated mineral exploration and mine developments, especially in the Golden Triangle. Planned large-scale mining could produce more than three gigatons of tailings - more than has been mined in the past 100 years at Bingham Canyon, the largest mine in the United States. Large-scale mining could have measurable effects on the water quality and ecological condition of transboundary rivers</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="jumbotron_2_ak"></div>
+    <section id="container2">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h2>Research Activites</h2>
+                    <p>The U.S. Geological Survey is assessing the baseline conditions of transboundary watersheds in the southeast Alaska region in partnership with tribal nations and government agencies. Collecting data on water quality and watershed conditions can help identify natural sources of water quality constituents. These data will contribute to a comprehensive understanding of current conditions which will serve as a reference (baseline). This information can then be used to monitor the long-term water quality during the operation of large-scale mines in the Canadian portion of the watersheds.</p>
+                    <p>The USGS operates streamgages on the Alsek, Stikine, Taku, and Unuk Rivers. These gages record the quantity of water flowing in the rivers (discharge) which can be viewed on NWIS **** LINK. In addition to stream flow measurements, the USGS is characterizing water quality, sediment quality, and biological condition, and regional geology and mineralization potential.</p>
+                    <figure>
+                    <img src="static/img/ak_main_2.jpg" style="width:100%", class="center">
+                    <figcaption>USGS scientists measure stream flow on the Unuk River</figcaption>
+                    </figure>
+                    <br><br>
+                    <p>The immense volume of water carried in large Alaskan transboundary rivers necessitates careful planning for scientists to collect representative samples. The USGS uses rigorous methods to ensure that the water and sediment samples that they collect are reflective of conditions throughout the river. Field visits are scheduled every six to eight weeks to capture seasonal variations.</p>
+                    <p>Just reaching the rivers can be a challenge. Scientists travel by float plane, helicopter, and boat to access remote field sites. Steep valleys, long periods of cloudy weather, and wintry conditions add another level of complexity.</p>
+                    <figure>
+                    <img src="static/img/ak_main_3.jpg" style="width:100%", class="center">
+                    <figcaption>A USGS technician works to construct a new gage house on the Taku River. Sturdy gage houses are necessary to protect the equipment that record and transmit stream flow measurements.</figcaption>
+                    </figure>
+                    <br><br>
+                    <p>Once USGS scientists arrive at the sites, they work to capture a wealth of data including physical properties and concentrations of major ions, metals, suspended-sediment, and nutrients. Several water quality parameters, such as temperature and pH, are measured directly in the river. Other parameters, such as the concentrations of metals, must be obtained from a lab. Scientists traverse the rivers collecting bottles filled with water from multiple locations and depths in the channel. Laboratory scientists use precise techniques to analyze additional parameters that cannot be measured in the field. In some cases, they have developed new cutting-edge techniques to detect constituents from low volumes of collected material. Data from these discrete field visits are publicly available through NWIS.</p>
+                    <!-- image of the table, or table.  whatever is easier -->
+                    <figure>
+                    <img src="static/img/wq_table.png" class="center">
+                    <figcaption>Constituents measured by USGS scientists at transboundary sites.</figcaption>
+                    </figure>
+                    <br><br>
+                    <p>The health of the ecosystem is a major motivation for this scientific work. Stakeholders want to ensure that salmon runs continue to thrive due to their ecological, cultural, spiritual, and economic significance in the region. Additionally, it is important that ecosystems function as a resilient web of systems, especially when faces global pressures such as climate change.</p>
+                    <p>Once a year in the late summer or early fall, USGS biologists make a special visit to the southeast Alaska transboundary rivers to collect baseline biological data. They gather samples of organisms at different levels on the food web including periphyton, macroinvertebrates and fish. Laboratory scientists run tests to measure the concentrations of constituents, including metals, in different tissues. These data may inform researchers and managers about the health of the individual organism and species. The data may also clarify how different organisms uptake metal from the aquatic environment and metals move through the food web.</p>
+                    <figure>
+                    <img src="static/img/ak_main_4.jpg" style="width:100%", class="center">
+                    <figcaption>Winter conditions pose an additional challenge for collecting samples at what are already remote sites. A USGS scientist drills through thick ice to access the Taku River below.</figcaption>
+                    </figure>
+                    <br><br>
+                    <p>Few recent geologic maps exist for Southeast Alaska meaning that little is known about the underlying geologic conditions in the Alaskan portion of transboundary watersheds. Improving our understanding of the bedrock geology is a major first step for characterizing transboundary watersheds. For instance, the bedrock geology can help evaluate the potential acid generating or neutralizing effects of rocks in the watersheds. Additionally, geologic mapping may inform the location and abundance of precious metal deposits. These deposits are prevalent on the Canadian side of the watersheds and are presumed to extend into the United States. Understanding the regional geology and possible distribution, types, and abundance of both mined and unmined deposits in Alaska and Canada is crucial to determination of baseline conditions and predicting the possible downstream effects of future mining.  The USGS seeks to close this knowledge gap by synthesizing information available from existing geologic maps and geochemical databases, as well as collecting and analyzing geochemical samples of stream sediment, and conducting a geospatial analysis of mineralization potential within the watersheds.</p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <div class="jumbotron_3_ak"></div>
+    <section id="text">
+    <div class="container">
+        <div class="row">
+            <br>
+            <div class="col-sm-12">
+                <h2>Partners and Cooporators</h2>
+                <p>The potential effects of mining activities on southeast Alaska transboundary rivers are most important to local stakeholders, which are represented by tribal organizations, nonprofits, and government agencies. The USGS has entered into a Memorandum of Understanding with Central Council of Tlingit and Haida Indian Tribes of Alaska (Central Council), Ketchikan Indian Community and the Bureau of Indian Affairs to ensure that assessments meet the needs of local stakeholders and to establish collaboration on water quality monitoring of transboundary rivers. The USGS is collaborating formally and informally with the State of Alaska and other federal agencies including the U.S. Forest Service.</p>
+                <ul>
+                    <li><a href="#">Coop link 1</a></li>
+                    <li><a href="#">Coop link 2</a></li>
+                    <li><a href="#">Coop link 3</a></li>
+                    <li><a href="#">Coop link 4</a></li>
+                </ul>
+                <br><br>
+            </div>
+        </div>
+    </div>
+
+        <div class="container">
+            <div class="row">
+                <br>
+                <div class="col-sm-12">
+                    <h2>Individual Alaska Projects</h2>
+                    <ul>
+                        <li><a href="{{ url_for("alsek") }}">Alsek</a></li>
+                        <li><a href="{{ url_for("unuk") }}">Unuk</a></li>
+                        <li><a href="{{ url_for("stikine") }}">Stikine</a></li>
+                        <li><a href="{{ url_for("taku") }}">Taku</a></li>
+                        <li><a href="{{ url_for("salmon") }}">Salmon</a></li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    </body>
+</main>
+{% endblock %}

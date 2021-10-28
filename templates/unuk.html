@@ -1,0 +1,128 @@
+{% extends "base.html" %}
+
+{% block title %}Home{% endblock %}
+{% block content %}
+<main>
+  <body id="page-top">
+
+  <!-- BEGIN USGS Applications Header Template -->
+  <header id="navbar" class="header-nav" role="banner">
+    <div class="tmp-container">
+      <div class="header"> <a class="logo-header" href="https://www.usgs.gov/index.html" title="Home">
+        <img class="img" src="static/img/logo.png" alt="Home"/>
+      </a>
+      </div>
+    </div>
+    <!-- end header-container-->
+  </header>
+  <nav id="mainNav" class="navbar navbar-default subnav affix-top">
+    <div class="container-fluid">
+      <div class="navbar-header page-scroll">
+        <a class="navbar-brand" href="{{ url_for("index") }}">Home</a>
+        <a class="navbar-brand" href="{{ url_for("alaska") }}">Alaska</a>
+        <a class="navbar-brand" href="{{ url_for("washington") }}">Washington</a>
+        <a class="navbar-brand" href="{{ url_for("id_mt") }}">Idaho-Montana</a>
+
+      </div>
+
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-right">
+          <li>
+            <a href="#science_centers">USGS Science Centers</a>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="jumbotron_unuk"> </div>
+  <section id="title">
+    <div class="container-fluid">
+      <div class="row">
+        <h1>Unuk Watershed</h1>
+      </div>
+    </div>
+  </section>
+  <section id="text">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <p class=”lead”>The Unuk River drains 2476 square kilometers, from the Boundary Ranges in Canada to the Behm Canal, Alaska.  Mountain ridges separate the watershed from the Iskut River - a tributary of the Stikine - to the north, and the Salmon River to the south.</p>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <h2>Background</h2>
+          <p>The Tahltan and Tligngit Sanyaa Kwaan recognize the Unuk watershed as part of their traditional territories, and they remain stewards of the land. Misty Fjords National Monument Wilderness, administered as part of Tongass National Forest, encompasses the Alaskan portion of the watershed. In Canada, Lava Forks and Border Lake Provincial Parks protect areas immediately adjacent to the border.</p>
+          <figure>
+            <img src="static/img/unuk_1.jpg" style="width:100%", class="center">
+            <figcaption>Scientists pilot sampling boats up the Unuk River.</figcaption>
+          </figure>
+          <br><br>
+          <p>Mineral deposits in the upper region of the watershed are associated with the Stikinia geologic terrane. In addition to extensive placer mining for gold, hard-rock mining has focused on large porphyry gold, silver, copper, and molybdenum deposits. Within the Unuk watershed, there are four large-scale mines that are currently operating or in the later stages of permitting and development.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="jumbotron_2_unuk"></div>
+  <section id="container2">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <h2>Research and Data</h2>
+          <p>The USGS operates a streamgage near the mouth of the Unuk River. Data including stream flow conditions, continuous water quality monitoring, and discrete water quality sampling are available through the <a href="https://waterdata.usgs.gov/nwis/inventory/?site_no=15015593&agency_cd=USGS&amp;">National Water Information System (NWIS)</a>.</p>
+          <p>USGS field crews travel to the Unuk a few times each year to collect additional samples. Data is available at NWIS.</p>
+          <figure>
+            <img src="static/img/unuk_2.jpg" style="width:100%", class="center">
+            <figcaption>USGS scientist Jamie Pierce prepares to collect data on the Unuk River near the Canadian border.</figcaption>
+          </figure>
+          <br><br>
+          <p>The graphs below reflect the data published on NWIS – data tables, graphs, and statistics directly are available to download there.</p>
+          <!--graphs? -->
+          <img src="static/img/placeholder.jpg" />
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="jumbotron_3_unuk"></div>
+  <section id="science_centers">
+
+    <section id="text">
+      <div class="container">
+        <div class="row">
+          <br>
+          <div class="col-sm-12">
+            <h2>Partners and Cooporators</h2>
+            <ul>
+              <li><a href="#">Coop link 1</a></li>
+              <li><a href="#">Coop link 2</a></li>
+              <li><a href="#">Coop link 3</a></li>
+              <li><a href="#">Coop link 4</a></li>
+            </ul>
+            <br><br>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <br>
+          <div class="col-sm-12">
+            <h2>Other Alaska Projects</h2>
+            <ul>
+              <li><a href="{{ url_for("alsek") }}">Alsek</a></li>
+              <li><a href="{{ url_for("taku") }}">Taku</a></li>
+              <li><a href="{{ url_for("stikine") }}">Stikine</a></li>
+              <li><a href="{{ url_for("salmon") }}">Salmon</a></li>
+              <li><a href="{{ url_for("alaska") }}">Alaska Home Page</a></li>
+            </ul>
+
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</main>
+{% endblock %}

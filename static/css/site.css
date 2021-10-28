@@ -1,0 +1,665 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  font-family: 'Lato', Arial, sans-serif;
+  font-weight: 400;
+  background-color: #fff;
+}
+
+h4, h5, h6 {
+  font-family: 'Lato', Arial, sans-serif;
+}
+h1 {
+  font-size: 72px;
+  font-family: 'Lato', Arial, sans-serif;
+  font-weight: 700;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+h2 {
+    font-size: 36px;
+    font-weight: 700;
+    color: #42603c;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-bottom: 10px;
+    text-shadow: 2px 2px 2px #dcdddd;
+}
+
+h3 {
+  font-family: 'Lato', Arial, sans-serif;
+  font-size: 16pt;
+  color: #fff;
+  font-weight: 400;
+  text-shadow: none;
+}
+
+p {
+  font-size: 14pt;
+  line-height: 1.4em;
+  font-family: 'Lato', Arial, sans-serif;
+  font-weight: 400;
+  text-align: left;
+}
+.lead {
+  font-size: 16pt;
+}
+
+.topspace {
+    padding-top: 20px;
+}
+
+.noleft {
+    padding-left: 0;
+    margin-left: 0;
+}
+
+li {
+     font-size: 14pt;
+     line-height: 1.4em;
+     font-family: 'Lato', Arial, sans-serif;
+     font-weight: 400;
+     text-align: left;
+   }
+   .lead {
+     font-size: 16pt;
+   }
+
+   .topspace {
+       padding-top: 20px;
+   }
+
+#container2 {
+  background-color: #315b60;
+  color: #fff;
+  padding-bottom: 40px;
+  padding-top: 40px;
+}
+#container2 h2 {
+  color: #fff;
+  text-shadow: none;
+}
+
+#science_centers {
+  background-color: #42603c;
+  color: #fff;
+  padding-bottom: 40px;
+  padding-top: 40px;
+}
+#science_centers h2 {
+  color: #fff;
+  text-shadow: none;
+}
+
+.navbar-nav > li {
+  float: left;
+  position: relative;
+}
+
+.jumbotron {
+  background:
+    url('../img/simil-wide_2.jpg') no-repeat center center scroll;
+  padding-top: 0;
+  margin-bottom: 0;
+  height:800px;
+  width:100%;
+}
+
+.jumbotron_2{
+    background:
+        url('../img/Jumbo_2i.jpg') no-repeat center center scroll;
+    background-color: #315b60;
+    padding-top: 0;
+    margin-bottom: 0;
+    height:800px;
+    width:100%;
+ }
+
+.jumbotron_3 {
+  background:
+    url('../img/Jumbo_3i.jpg') no-repeat center center scroll;
+  padding-top: 0;
+  margin-bottom: 0;
+  height:800px;
+  width:100%;
+}
+
+.jumbotron_ak {
+  background:
+    url('../img/ak_jumbo_1.jpg') no-repeat center center scroll;
+  background-size: cover;
+  padding-top: 0;
+  margin-bottom: 0;
+  height:900px;
+  width:100%;
+}
+
+.jumbotron_2_ak{
+    background:
+        url('../img/ak_jumbo_2.jpg') no-repeat center center scroll;
+    background-size: cover;
+    background-color: #315b60;
+    padding-top: 0;
+    margin-bottom: 0;
+    height:900px;
+    width:100%;
+ }
+
+.jumbotron_3_ak {
+  background:
+    url('../img/ak_jumbo_3.jpg') no-repeat center center scroll;
+  background-size: cover;
+  padding-top: 0;
+  margin-bottom: 0;
+  height:900px;
+  width:100%;
+}
+
+/* Alex is terrible at managing his graphics. */
+
+.jumbotron_alsek {
+  background:
+    url('../img/als_jumbo_1.jpg') no-repeat center center scroll;
+  background-size: cover;
+  padding-top: 0;
+  margin-bottom: 0;
+  height:900px;
+  width:100%;
+}
+
+.jumbotron_2_alsek{
+    background:
+        url('../img/als_jumbo_2.jpg') no-repeat center center scroll;
+    background-size: cover;
+    background-color: #315b60;
+    padding-top: 0;
+    margin-bottom: 0;
+    height:900px;
+    width:100%;
+ }
+
+.jumbotron_3_alsek {
+  background:
+    url('../img/als_jumbo_3.jpg') no-repeat center center scroll;
+  background-size: cover;
+  padding-top: 0;
+  margin-bottom: 0;
+  height:900px;
+  width:100%;
+}
+
+.jumbotron_salmon {
+  background:
+    url('../img/salmon_jumbo_1.jpg') no-repeat center center scroll;
+  background-size: cover;
+  padding-top: 0;
+  margin-bottom: 0;
+  height:900px;
+  width:100%;
+}
+
+.jumbotron_2_salmon{
+    background:
+        url('../img/salmon_jumbo_2.jpg') no-repeat center center scroll;
+    background-size: cover;
+    background-color: #315b60;
+    padding-top: 0;
+    margin-bottom: 0;
+    height:900px;
+    width:100%;
+ }
+
+.jumbotron_3_salmon {
+  background:
+    url('../img/salmon_jumbo_3.jpg') no-repeat center center scroll;
+  background-size: cover;
+  padding-top: 0;
+  margin-bottom: 0;
+  height:900px;
+  width:100%;
+}
+
+.jumbotron_taku {
+  background:
+    url('../img/taku_jumbo_1.jpg') no-repeat center center scroll;
+  background-size: cover;
+  padding-top: 0;
+  margin-bottom: 0;
+  height:900px;
+  width:100%;
+}
+
+.jumbotron_2_taku{
+    background:
+        url('../img/taku_jumbo_2.jpg') no-repeat center center scroll;
+    background-size: cover;
+    background-color: #315b60;
+    padding-top: 0;
+    margin-bottom: 0;
+    height:900px;
+    width:100%;
+ }
+
+.jumbotron_3_taku {
+  background:
+    url('../img/taku_jumbo_3.jpg') no-repeat center center scroll;
+  background-size: cover;
+  padding-top: 0;
+  margin-bottom: 0;
+  height:900px;
+  width:100%;
+}
+
+.jumbotron_unuk {
+  background:
+    url('../img/unuk_jumbo_1.jpg') no-repeat center center scroll;
+  background-size: cover;
+  padding-top: 0;
+  margin-bottom: 0;
+  height:900px;
+  width:100%;
+}
+
+.jumbotron_2_unuk{
+    background:
+        url('../img/unuk_jumbo_2.jpg') no-repeat center center scroll;
+    background-size: cover;
+    background-color: #315b60;
+    padding-top: 0;
+    margin-bottom: 0;
+    height:900px;
+    width:100%;
+ }
+
+.jumbotron_3_unuk {
+  background:
+    url('../img/unuk_jumbo_3.jpg') no-repeat center center scroll;
+  background-size: cover;
+  padding-top: 0;
+  margin-bottom: 0;
+  height:900px;
+  width:100%;
+}
+
+.jumbotron_stik {
+  background:
+    url('../img/stik_jumbo_1.jpg') no-repeat center center scroll;
+  background-size: cover;
+  padding-top: 0;
+  margin-bottom: 0;
+  height:900px;
+  width:100%;
+}
+
+.jumbotron_2_stik{
+    background:
+        url('../img/stik_jumbo_2.jpg') no-repeat center center scroll;
+    background-size: cover;
+    background-color: #315b60;
+    padding-top: 0;
+    margin-bottom: 0;
+    height:900px;
+    width:100%;
+ }
+
+.jumbotron_3_stik {
+  background:
+    url('../img/stik_jumbo_3.jpg') no-repeat center center scroll;
+  background-size: cover;
+  padding-top: 0;
+  margin-bottom: 0;
+  height:900px;
+  width:100%;
+}
+
+.jumbotron_mt {
+  background:
+    url('../img/mt_jumbo_1.jpg') no-repeat center center scroll;
+  background-size: cover;
+  padding-top: 0;
+  margin-bottom: 0;
+  height:1000px;
+  width:100%;
+}
+
+.jumbotron_2_mt{
+    background:
+        url('../img/mt_jumbo_3.jpg') no-repeat center center scroll;
+    background-size: cover;
+    background-color: #315b60;
+    padding-top: 0;
+    margin-bottom: 0;
+    height:900px;
+    width:100%;
+ }
+
+.jumbotron_3_mt {
+  background:
+    url('../img/mt_jumbo_2.jpg') no-repeat center center scroll;
+  background-size: cover;
+  padding-top: 0;
+  margin-bottom: 0;
+  height:900px;
+  width:100%;
+}
+
+/* progressively less terrible css */
+
+figure {
+  display: inline-block
+  padding: 4px;
+  margin: auto;
+}
+
+figcaption {
+  font-style: italic;
+  padding: 2px;
+  text-align: center;
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+
+#title {
+  background-color: #42603c;
+  padding-bottom: 10px;
+}
+#title h1 {
+  padding-left: 120px;
+  padding-right: 120px;
+  margin-top: 0;
+  text-shadow: 2px 2px 6px #252525;
+  text-align: center;
+  font-size: 60px;
+  color:#fff;
+  padding-top: 40px;
+}
+#title h2 {
+  padding-left: 120px;
+  padding-right: 120px;
+  color:#fff;
+  text-shadow: 2px 2px 6px #252525;
+  text-align: center;
+  padding-top: 5px;
+  padding-bottom: 20px;
+}
+
+#text {
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+
+/* navbar */
+
+  .navbar {
+    border-radius: 0;
+    height: 30px;
+  }
+  .navbar-default .nav > li {
+    padding: 0;
+  }
+
+
+  .navbar-default .nav > li > a:hover, .navbar-default .nav > li > a:focus:hover {
+    color: #4c8f99;
+  }
+  .navbar-default .nav > li.active > a, .navbar-default .nav > li.active > a:focus {
+    color: #fff !important;
+    background-color: transparent;
+    font-weight: 400;
+  }
+  .navbar-default .nav > li.active > a:hover, .navbar-default .nav > li.active > a:focus:hover {
+    background-color: transparent;
+  }
+  .navbar-default {
+    background-color: #4c8f99;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+  }
+  .navbar-default .navbar-collapse {
+    border-color: transparent;
+  }
+  .navbar-default .navbar-header .navbar-brand {
+    color: #24383f;
+    font-weight: 400;
+    font-size: 14pt;
+  }
+  .navbar-default .navbar-header .navbar-brand:hover, .navbar-default .navbar-header .navbar-brand:focus {
+    color: #2e4528;
+
+  }
+  .navbar-default .nav > li > a, .navbar-default .nav > li > a:focus {
+    color: #24383f;
+    font-size: 14pt;
+  }
+  .navbar-default .nav > li > a:hover, .navbar-default .nav > li > a:focus:hover {
+    color: #fff;
+    font-size: 14pt;
+  }
+  .navbar-default.affix {
+    background-color:  #4c8f99;
+    /*border-color: rgba(34, 34, 34, 0.05);*/
+  }
+
+  .navbar-default.affix .navbar-header .navbar-brand {
+    color: #24383f;
+    font-weight: 400;
+  }
+  .navbar-default.affix .nav > li > a, .navbar-default.affix .nav > li > a:focus {
+    color: #24383f;
+  }
+  .navbar-default.affix .nav > li > a:hover, .navbar-default.affix .nav > li > a:focus:hover {
+    color: #fff;
+  }
+
+  .navbar-default .dropdown-content {
+    display: none;
+    position: absolute
+    }
+
+  .navbar-default .dropdown-content a {
+    color: black;
+  }
+  .navbar-default .dropdown:hover > .dropdown-content {
+    display: block
+    }
+
+  .navbar-collapse.collapse.in {
+    display: block !important;
+  }
+
+  .subnav {
+  margin:0;
+  top: 0px;
+  z-index: 1020;
+  background-color: #4c8f99;
+  padding: 0;
+}
+.subnav2 {
+  margin:0;
+  top: 0px;
+  z-index: 1020;
+  background-color: #65625f;
+  padding: 0;
+}
+.subnav.affix {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index:10;
+}
+.fa-lg {
+  vertical-align: 0;
+}
+#bottomnav {
+  background-color: #65625f;
+  border-top: 4px solid #fff;
+  border-bottom: 4px solid #fff;
+  color: #fff;
+  font-size: 14pt;
+}
+ #nav.affix {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index:10;
+}
+.header-nav {
+  border-bottom: #000;
+}
+
+/* end navbar*/
+
+
+
+@media (min-width:769px) and (max-width:992px) {
+
+  .navbar-default .navbar-header .navbar-brand {
+    font-size: 10pt;
+  }
+  .jumbotron {
+  height: 120px;
+  margin-bottom: 0;
+}
+  .jumbotron h1{
+  font-size: 24px;
+  padding-left: 15%;
+  padding-right: 15%;
+  }
+  h2 {
+  font-size: 24pt;
+  padding-top: 20px;
+    }
+  h3 {
+  font-size: 20pt;
+  font-weight: 400;
+  }
+  h4 {
+  font-size: 14pt;
+}
+  #pi p {
+  font-size: 10pt;
+  text-align: center;
+  }
+  #pi h3 {
+  font-size: 10pt;
+  }
+  ul > li {
+    font-size: 10pt;
+  }
+  p {
+    font-size: 12pt;
+  }
+  ul > li {
+  font-size: 12pt;
+  }
+  ol > li {
+  font-size: 12pt;
+}
+  .caption {
+  font-size: 10pt;
+  padding-left: 20px;
+  }
+
+  .caption li {
+    list-style-type: none;
+    font-size: 9pt;
+    padding-top: 4px;
+    padding-left: 10px;
+  }
+  #hypo h4 {
+    font-size: 14pt;
+  }
+  .welltitle {
+  font-size: 12pt;
+}
+.welltext {
+  font-size: 10pt;
+}
+.leadtext {
+  font-size: 12pt;
+}
+.panel-footer .name {
+  font-size: 9pt;
+}
+#hypo h2 {
+    font-size: 24pt;
+  }
+
+}
+
+
+@media (min-width:993px) and (max-width:1265px) {
+  .jumbotron{
+  height: 400px;
+  margin-bottom: 0;
+  padding-top: 0;
+  }
+
+  .jumbotron h1 {
+  font-size: 36px;
+  padding-top: 30px;
+  padding-left: 15%;
+  padding-right: 15%;
+  }
+  #pi p {
+  font-size: 12pt;
+  text-align: center;
+  }
+  #pi h3 {
+  font-size: 12pt;
+  }
+  p {
+    font-size: 14pt;
+    }
+  h4 {
+    font-size: 18pt;
+    }
+  h3 {
+    font-size: 24pt;
+    font-weight: 600;
+    }
+  h2 {
+  font-size: 36pt;
+  padding-top: 20px;
+    }
+  #hypo h2 {
+    font-size: 30pt;
+  }
+  #hypo h4 {
+    font-size: 16pt;
+  }
+  .navbar-default .navbar-toggle {
+    color:#fff;
+  }
+  .leadtext {
+  font-size: 14pt;
+}0.
+
+@media (min-width:1266px) {
+
+h2 {
+  font-size: 36pt;
+  margin-top: 0;
+}
+h3 {
+  font-size: 28pt;
+  font-weight: 600;
+}
+h4 {
+  font-size: 24pt;
+}
+.welltitle {
+  font-size: 14pt;
+}
+.welltext {
+  font-size: 12pt;
+}
+}
+

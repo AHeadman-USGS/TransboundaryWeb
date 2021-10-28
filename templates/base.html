@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <!-- include libraries(jQuery, bootstrap) -->
+
+
+    <!-- Bootstrap Core CSS -->
+		<!-- <script src="js/jquery-3.5.1.min.js"></script> -->
+		<link href="static/css/bootstrap.css" rel="stylesheet">
+
+		<!-- Custom Fonts -->
+		<link href="static/css/font-awesome.css" rel="stylesheet" type="text/css">
+		<link href="https://fonts.googleapis.com/css?family=Bitter:400,700|Lato:400,700" rel="stylesheet">
+
+		<!-- Theme CSS -->
+		<link href="static/css/fonts.css" rel="stylesheet" type="text/css">
+		<link href="static/css/common.css" rel="stylesheet" type="text/css" media="screen"/>
+		<link href="static/css/site.css" rel="stylesheet" type="text/css" media="screen"/>
+      <link
+              href="http://cdn.bokeh.org/bokeh/release/bokeh-2.4.1.min.css"
+              rel="stylesheet" type="text/css">
+      <link href="http://cdn.bokeh.org/bokeh/release/bokeh-widgets-2.4.1.min.css" rel="stylesheet" type="text/css">
+
+      <script src="http://cdn.bokeh.org/bokeh/release/bokeh-2.4.1.min.js"></script>
+      <script src="http://cdn.bokeh.org/bokeh/release/bokeh-widgets-2.4.1.min.js"></script>
+
+      {% block extra_styles %}{% endblock %}
+
+
+    <title>Transboundary Watershed Research | {% block title %}{% endblock %}</title>
+  </head>
+  <body>
+  {% block content %}{% endblock %}
+  </body>
+</html>

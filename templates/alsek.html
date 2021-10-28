@@ -1,0 +1,122 @@
+{% extends "base.html" %}
+
+{% block title %}Home{% endblock %}
+{% block content %}
+<main>
+  <body id="page-top">
+
+  <!-- BEGIN USGS Applications Header Template -->
+  <header id="navbar" class="header-nav" role="banner">
+    <div class="tmp-container">
+      <div class="header"> <a class="logo-header" href="https://www.usgs.gov/index.html" title="Home">
+        <img class="img" src="static/img/logo.png" alt="Home"/>
+      </a>
+      </div>
+    </div>
+    <!-- end header-container-->
+  </header>
+  <nav id="mainNav" class="navbar navbar-default subnav affix-top">
+    <div class="container-fluid">
+      <div class="navbar-header page-scroll">
+        <a class="navbar-brand" href="{{ url_for("index") }}">Home</a>
+        <a class="navbar-brand" href="{{ url_for("alaska") }}">Alaska</a>
+        <a class="navbar-brand" href="{{ url_for("washington") }}">Washington</a>
+        <a class="navbar-brand" href="{{ url_for("id_mt") }}">Idaho-Montana</a>
+      </div>
+
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-right">
+          <li>
+            <a href="#science_centers">USGS Science Centers</a>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="jumbotron_alsek"> </div>
+  <section id="title">
+    <div class="container-fluid">
+      <div class="row">
+        <h1>Alsek Watershed</h1>
+      </div>
+    </div>
+  </section>
+  <section id="text">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <p class="lead">The Alsek watershed is a 28922 square kilometer basin located in the northern portion of the Alaska panhandle region. The main stem of the Alsek River travels south from Canada collecting meltwater from the numerous glaciers perched in the Ruby Ranges, St. Elias – Fairweather Mountains, and Alsek Ranges.</p>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <h2>Background</h2>
+          <p>The Tatshenshini River flows from the northeast to join the Alsek shortly before the United States-Canadian border. Indigenous peoples recognize the Alsek watershed as part of their traditional territories, including multiple Tlingit kwaans and the Champagne and Aishihik First Nation.</p>
+          <p>The Yukon Territory village of Haines Junction is in the north of the watershed, at the junction of the Haines and Alaska Highways. The Alsek watershed spans parts of Glacier Bay National Park and Preserve in Alaska, Tatenshini-Alsek Provincial Park in British Columbia, and Kluane National Park and Reserve in the Yukon Territory. Nearly the entirety of the Alsek watershed is protected as parks and there are no large-scale historical, current or proposed mining operations in the watershed. A large open pit copper mine proposed in the early 1990s in the Alsek basin did not result in development.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="jumbotron_2_alsek"></div>
+  <section id="container2">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <h2>Research and Data</h2>
+          <p>USGS field crews travel to the Alsek a few times each year to collect additional samples.  The USGS operates a streamgage near the mouth of the Alsek River. Data is available through the <a href="https://waterdata.usgs.gov/nwis/inventory?agency_code=USGS&site_no=15129120">National Water Information System (NWIS)</a>. </p>
+          <figure>
+          <img src="static/img/Alsek_1.jpg" class="center">
+          <figcaption>A gage house protects the equipment that records and transmits water quantity and quality data. A telemetry system broadcasts data which is available to view on the internet in near real time.</figcaption>
+          </figure>
+          <br><br>
+          <p>The graphs below reflect the data published on NWIS – data tables, graphs, and statistics directly are available to download there.</p>
+          <!--graphs? -->
+          <figure>    {{ script|safe }}
+                      {{ div|safe }}</figure>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="jumbotron_3_alsek"></div>
+  <section id="science_centers">
+
+    <section id="text">
+      <div class="container">
+        <div class="row">
+          <br>
+          <div class="col-sm-12">
+            <h2>Partners and Cooporators</h2>
+            <ul>
+              <li><a href="#">Coop link 1</a></li>
+              <li><a href="#">Coop link 2</a></li>
+              <li><a href="#">Coop link 3</a></li>
+              <li><a href="#">Coop link 4</a></li>
+            </ul>
+            <br><br>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <br>
+          <div class="col-sm-12">
+            <h2>Other Alaska Projects</h2>
+            <ul>
+              <li><a href="{{ url_for("taku") }}">Taku</a></li>
+              <li><a href="{{ url_for("unuk") }}">Unuk</a></li>
+              <li><a href="{{ url_for("stikine") }}">Stikine</a></li>
+              <li><a href="{{ url_for("salmon") }}">Salmon</a></li>
+              <li><a href="{{ url_for("alaska") }}">Alaska Home Page</a></li>
+            </ul>
+
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</main>
+{% endblock %}

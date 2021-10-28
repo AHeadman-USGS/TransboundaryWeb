@@ -1,0 +1,119 @@
+{% extends "base.html" %}
+
+{% block title %}Home{% endblock %}
+{% block content %}
+<main>
+  <body id="page-top">
+
+  <!-- BEGIN USGS Applications Header Template -->
+  <header id="navbar" class="header-nav" role="banner">
+    <div class="tmp-container">
+      <div class="header"> <a class="logo-header" href="https://www.usgs.gov/index.html" title="Home">
+        <img class="img" src="static/img/logo.png" alt="Home"/>
+      </a>
+      </div>
+    </div>
+    <!-- end header-container-->
+  </header>
+  <nav id="mainNav" class="navbar navbar-default subnav affix-top">
+    <div class="container-fluid">
+      <div class="navbar-header page-scroll">
+        <a class="navbar-brand" href="{{ url_for("index") }}">Home</a>
+        <a class="navbar-brand" href="{{ url_for("alaska") }}">Alaska</a>
+        <a class="navbar-brand" href="{{ url_for("washington") }}">Washington</a>
+        <a class="navbar-brand" href="{{ url_for("id_mt") }}">Idaho-Montana</a>
+
+      </div>
+
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-right">
+          <li>
+            <a href="#science_centers">USGS Science Centers</a>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="jumbotron_taku"> </div>
+  <section id="title">
+    <div class="container-fluid">
+      <div class="row">
+        <h1>Taku Watershed</h1>
+      </div>
+    </div>
+  </section>
+  <section id="text">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <p class="lead">The Taku River drains a watershed of 18517 square kilometers and is formed by the confluence of the Inklin River and Nakina River. The Nakina River flows southwest from the Northern Gulf Forelands of British Columbia, passing through the Yukon-Stikine Highlands before joining the Inklin River which flows northwest through the Boundary Range. The Tulsequah River is another major tributary of the Taku River, entering the mainstem near the international border. </p>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <h2>Background</h2>
+          <p>Three conservancies and one provincial park form a network of protected areas in Canada, and the Tongass National Forest protects the entirety of the Alaskan portion of the watershed. The conservancies are managed to ensure that the lands and waters forming the traditional territory of the Taku River Tlingit Nation continue to support their way of life. Juneau, the state capitol of Alaska, is located near the mouth of the Taku. Four historical large-scale mining operations in the Taku Watershed persist as sites of mineral exploration and prospecting, as well as environmental remediation. Gold, silver, copper, lead, and zinc constitute the major commodities extracted. </p>        </div>
+      </div>
+    </div>
+  </section>
+  <div class="jumbotron_2_taku"></div>
+  <section id="container2">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <h2>Research and Data</h2>
+          <p>USGS field crews travel to the Taku a few times each year to collect additional samples. Data is available through the <a href="https://waterdata.usgs.gov/nwis/inventory/?site_no=15024740&agency_cd=USGS&amp;">National Water Information System (NWIS)</a>. </p>
+          <figure>
+            <img src="static/img/taku_1.jpg" style="width:100%", class="center">
+            <figcaption>USGS scientist titrates a sample collected from the Taku River.</figcaption>
+          </figure>
+          <br><br>
+          <p>The graphs below reflect the data published on NWIS – data tables, graphs, and statistics directly are available to download there.</p>
+          <!--graphs? -->
+          <img src="static/img/placeholder.jpg" />
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="science_centers">
+    <div class="jumbotron_3_taku"></div>
+    <section id="text">
+      <div class="container">
+        <div class="row">
+          <br>
+          <div class="col-sm-12">
+            <h2>Partners and Cooporators</h2>
+            <ul>
+              <li><a href="#">Coop link 1</a></li>
+              <li><a href="#">Coop link 2</a></li>
+              <li><a href="#">Coop link 3</a></li>
+              <li><a href="#">Coop link 4</a></li>
+            </ul>
+            <br><br>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <br>
+          <div class="col-sm-12">
+            <h2>Other Alaska Projects</h2>
+            <ul>
+              <li><a href="{{ url_for("alsek") }}">Alsek</a></li>
+              <li><a href="{{ url_for("unuk") }}">Unuk</a></li>
+              <li><a href="{{ url_for("stikine") }}">Stikine</a></li>
+              <li><a href="{{ url_for("salmon") }}">Salmon</a></li>
+              <li><a href="{{ url_for("alaska") }}">Alaska Home Page</a></li>
+            </ul>
+
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</main>
+{% endblock %}

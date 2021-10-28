@@ -1,0 +1,137 @@
+{% extends "base.html" %}
+
+{% block title %}Home{% endblock %}
+{% block content %}
+<main>
+	<body id="page-top">
+
+		<!-- BEGIN USGS Applications Header Template -->
+		<header id="navbar" class="header-nav" role="banner">
+			<div class="tmp-container">
+					<div class="header"> <a class="logo-header" href="https://www.usgs.gov/index.html" title="Home">
+						<img class="img" src="static/img/logo.png" alt="Home"/>
+					</a>
+				</div>
+			</div>
+			<!-- end header-container-->
+		</header>
+        <nav id="mainNav" class="navbar navbar-default subnav affix-top">
+            <div class="container-fluid">
+                <div class="navbar-header page-scroll">
+                    <a class="navbar-brand" href="{{ url_for("index") }}">Home</a>
+                    <a class="navbar-brand" href="{{ url_for("alaska") }}">Alaska</a>
+                    <a class="navbar-brand" href="{{ url_for("washington") }}">Washington</a>
+                    <a class="navbar-brand" href="{{ url_for("id_mt") }}">Idaho-Montana</a>
+
+                </div>
+
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="#science_centers">USGS Science Centers</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="jumbotron"> </div>
+    		<section id="title">
+			<div class="container-fluid">
+				<div class="row">
+					<h1>Transboundary Watersheds</h1>
+				</div>
+			</div>
+		</section>
+        <section id="text">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <p class="lead">
+                        Water knows no borders, flowing freely across the landscape according to the laws of physics. Rivers sustain both human and natural systems. They provide drinking water, serve as a source of irrigation, and supply sediment that sustains soils. They function as conduits for people and goods, their flow generates electrical power, and the force of their floods can reshape landscapes. Rivers are home to many, including aquatic species and humans communities living along their banks. Understanding river systems is crucial for supporting and sustaining their critical functions.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+            <div class="row">
+                <div class="col-sm-12 noleft topspace">
+                    <h2>Water Quality Overview</h2>
+                    <p>Water quality is one way to understand the health of rivers. Generally, water quality can be thought of as a measure of the suitability of water for a particular use. Scientists study the chemical properties of water because conditions like pH and dissolved oxygen dictate which organisms will thrive. Understanding what is in water can enable predictions of how it will respond in different conditions. This can help managers decide what actions to take or avoid to promote the health of the people and ecosystems dependent on rivers.   </p>
+                    <p>The quality of water flowing through a river may be highly variable with space and time. Water quality depends on complex relationships between processes in the watershed. A watershed is all the area of land that drains streams and rainfall to a common outlet such as the ocean, a confluence of rivers, or any point along the stream channel. Physical processes – both human and natural – can influence the quality of water moving through any given watershed. Factors may include the amount, timing and form of precipitation; terrain; plant and animal communities; and human activities. </p>
+                    <br>
+                    <figure>
+                    <img src="static/img/main_1.jpg" style="width:50%", class="center">
+                    <figcaption>Wolverine and human tracks cross the bank of the Unuk River, Alaska.</figcaption>
+                    </figure>
+                    <br><br>
+                    <p>A river may have seasonally higher concentrations of sediments corresponding with precipitation increasing the amount of water transported by the river, and thus it’s power to carry particles. Continuous monitoring of key parameters (measures) such as temperature, pH, and dissolved oxygen allow scientists to understand the critical conditions under which chemical reactions occur. Though the processes are complicated, scientists and managers have developed standard tools to monitor the health of rivers. Additionally, modelling aided by computers can fine tune the knowledge for specific rivers and watersheds. </p>
+                    <br>
+                    <figure>
+                    <img src="static/img/main_2.jpg" style="width:50%", class="center">
+                    <figcaption>A barge equipped for water-quality monitoring on Lake Koocanusa, Montana, on the Kootenai River.</figcaption>
+                    </figure>
+                    <br><br>
+                    <p>More information about water quality found here: <a href="https://www.usgs.gov/special-topic/water-science-school/science/water-quality"> Water Quality | USGS.gov </a>
+                    <p>Access USGS water quality data here:<a href="https://waterdata.usgs.gov/nwis/qw"> USGS Water-Quality Data for the Nation </a></p><br>
+                </div>
+            </div>
+            </div>
+        </section>
+        <div class="jumbotron_2"></div>
+                <section id="container2">
+                    <div class="container">
+                    <div class="row">
+                        <div class="col-sm-12">
+                        <h2>Transboundary Rivers</h2>
+                        <p>Because some rivers cross political boundaries, including international borders, their governance becomes a matter of cooperation. Several rivers cross the United States-Canadian border in the Pacific Northwest. In recognition of the economic, social, and ecological importance of transboundary rivers, Congress directed the U.S. Geological Survey (USGS) through the 2018 Omnibus Spending Bill to “partner with local Tribes and other Federal agencies as necessary in the area to develop a water quality strategy for transboundary rivers impacted by mining activities". In 2019, the USGS began studying water-quality of selected transboundary rivers in the Pacific Northwest. The goal of this research is to characterize current, baseline water-quality conditions. In addition to contributing to the scientific understanding of these diverse and dynamic natural systems, this knowledge will facilitate future assessments of potential impacts to the river systems.</p>
+                        <p>Regional mining activity has the potential to impact water quality and ecological conditions within these transboundary watersheds. Multiple historic, current, and planned large-scale mining ventures could have measurable effects on the water quality and ecological condition of transboundary waters.  Establishing an understanding of current watershed conditions will allow scientists to monitor water quality trends through space and time, detect changes, and communicate with stakeholders on both sides of the border about the condition and functioning of these shared, vital resources.</p>
+                        </div>
+                    </div>
+                    </div>
+                <div class="container">
+                <div class="row">
+                    <br>
+                    <div class="col-sm-12">
+                        <h2>Mining</h2>
+                        <p>Mines are one form of economic activity that produce materials needed for everyday life. However, mining activities can present a risk to water quality and ecological condition. Mined material may contain minerals and elements that are released into the environment when material is excavated. Geochemical reactions of mined material with water and air can produce acid mine drainage. Additional elements may be introduced during the processing of mined materials. For example, milling operations historically used mercury to separate gold from other materials. When elements enter water in certain concentrations, they can alter water quality and pose impact ecological health.</p>
+                        <p>Detecting geochemical changes and determining the cause is complicated by the varied geology within watersheds, the complex nature of these chemical and biologic pathways, and the heterogeneity of how water flows through large river systems. Thus the need for rigorous scientific investigations of these systems, to better quantify risk and protect the health of rivers and all the species that rely upon them. </p>
+                        <p>More about mining and water quality here: <a href="https://www.usgs.gov/special-topic/water-science-school/science/mining-and-water-quality?qt-science_center_objects=0#qt-science_center_objects">Mining and Water Quality</a> </p>
+                        </div>
+                </div>
+                </div>
+            </section>
+            <div class="jumbotron_3"></div>
+            <section id="text">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <p>The following pages highlight the USGS’s efforts to monitor transboundary rivers in the Pacific Northwest. The rivers are grouped by region, but it is important to emphasize that this is a collaborative effort, spanning multiple USGS science centers. Stakeholder involvement is foundational and includes Tribes and First Nations, federal, state, and local agencies, and non-profits. </p>
+                                    <li>Alaska: Alsek, Unuk, Stikine, Taku, Salmon</li>
+                                    <li>Washington State: Similkameen, Skagit</li>
+                                    <li>Montana – Idaho: Kootenai River and Lake Koocanusa</li>
+                                </div>
+                            </div>
+                        </div>
+                        </section>
+            <section id="science_centers">
+                <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 noleft topspace">
+                        <h2>USGS Science Centers:</h2>
+                        <ul>
+                        <a href="https://www.usgs.gov/mission-areas/water-resources"><h3><li>USGS Water Mission Area (WMA)</li></h3></a>
+                        <a href="https://www.usgs.gov/science-explorer-results?es=alaska+science+center"><h3><li>USGS Alaska Science Center (ASC)</li></h3></a>
+                        <a href="https://www.usgs.gov/centers/ID-water"><h3><li>USGS Idaho Water Science Center</li></h3></a></li>
+                        <a href="https://www.usgs.gov/centers/wy-mt-water"><h3><li>USGS Wyoming-Montana Water Science Center </li></h3></a>
+                        <a href=https://www.usgs.gov/centers/wa-water><h3><li>USGS Washington Water Science Center</li></h3></a>
+                        </ul>
+
+                    </div>
+                    </div>
+                    </div>
+                </section>
+    </body>
+</main>
+{% endblock %}
