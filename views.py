@@ -51,17 +51,12 @@ def taku():
 
 @app.route('/salmon')
 def salmon():
-    return render_template('salmon.html')
-
-
-@app.route('/test.html')
-def test():
-    id = '15129120'
+    id = '15008000'
     ds = nwis_set(id)
     fig = create_figure(ds, '00060')
     renderer = hv.renderer('bokeh')
     hvplot = renderer.get_plot(fig)
     curdoc().add_root(hvplot.state)
     script, div = components(hvplot.state)
-    return render_template('test.html', script=script, div=div)
+    return render_template('salmon.html', script=script, div=div)
 
