@@ -9,6 +9,7 @@ colorcet==2.0.6
 cycler==0.10.0
 dataretrieval==0.7
 Flask==2.0.2
+gunicorn==20.1.0
 holoviews==1.14.6
 hvplot==0.7.3
 idna==3.3
