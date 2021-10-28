@@ -103,7 +103,7 @@ li {
     url('../img/simil-wide_2.jpg') no-repeat center center scroll;
   padding-top: 0;
   margin-bottom: 0;
-  height:800px;
+  height:1000px;
   width:100%;
 }
 
@@ -317,7 +317,6 @@ li {
 .jumbotron_mt {
   background:
     url('../img/mt_jumbo_1.jpg') no-repeat center center scroll;
-  background-size: cover;
   padding-top: 0;
   margin-bottom: 0;
   height:1000px;
@@ -338,10 +337,9 @@ li {
 .jumbotron_3_mt {
   background:
     url('../img/mt_jumbo_2.jpg') no-repeat center center scroll;
-  background-size: cover;
   padding-top: 0;
   margin-bottom: 0;
-  height:900px;
+  height:1000px;
   width:100%;
 }
 
