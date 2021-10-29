@@ -2,10 +2,9 @@ from flask import render_template, Response
 from bokeh.embed import components
 from bokeh.io import curdoc
 import holoviews as hv
-import data
 hv.extension("bokeh")
 from app import app
-from data import create_figure, nwis_set
+from data import create_figure, nwis_set, nwis_set_iv, dyn_figures
 
 
 @app.route('/')
@@ -24,13 +23,20 @@ def washington():
 @app.route('/id_mt')
 @app.route('/kootenai')
 def id_mt():
-    return render_template('kootenai.html')
+    id = '15008000'
+    ds = nwis_set_iv(id)
+    fig = dyn_figures(ds)
+    renderer = hv.renderer('bokeh')
+    hvplot = renderer.get_plot(fig)
+    curdoc().add_root(hvplot.state)
+    script, div = components(hvplot.state)
+    return render_template('kootenai.html', script=script, div=div)
 
 @app.route('/alsek')
 def alsek():
     id = '15129120'
     ds = nwis_set(id)
-    fig = create_figure(ds, '00060')
+    fig = dyn_figures(ds)
     renderer = hv.renderer('bokeh')
     hvplot = renderer.get_plot(fig)
     curdoc().add_root(hvplot.state)
@@ -53,7 +59,7 @@ def taku():
 def salmon():
     id = '15008000'
     ds = nwis_set(id)
-    fig = create_figure(ds, '00060')
+    fig = dyn_figures(ds)
     renderer = hv.renderer('bokeh')
     hvplot = renderer.get_plot(fig)
     curdoc().add_root(hvplot.state)

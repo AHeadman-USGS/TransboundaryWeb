@@ -3,9 +3,11 @@ import dataretrieval.nwis as nwis
 import hvplot.pandas
 import xarray as xr
 import pandas as pd
+import holoviews as hv
 
 class Nwis:
-    """Code from https://github.com/gantian127/nwis with added bits"""
+    """Expanded on https://github.com/gantian127/nwis with added bits
+    This is my in docs reminder to create a pull request for this one"""
 
     def __init__(self):
         self._dataset = None
@@ -56,7 +58,6 @@ class Nwis:
 
     @staticmethod
     def _get_nwis_data(site, start_date, end_date, data_type, nc_output):
-
         variable_info = {
             '00010': ['water temperature', 'degree celsius'],
             '00060': ['discharge', 'cubic feet per second'],
@@ -114,6 +115,7 @@ class Nwis:
 
         return xr_dataset
 
+
 def nwis_set(site_id):
     t = datetime.now()
     lastsix = t - timedelta(180)
@@ -123,6 +125,18 @@ def nwis_set(site_id):
     dataset = nwis_data.get_data(site=str(site_id), start_date= lastsix,
                                  end_date= t, data_type='dv')
     return dataset
+
+
+def nwis_set_iv(site_id):
+    t = datetime.now()
+    lastsix = t - timedelta(180)
+    t = str(t.date())
+    lastsix = str(lastsix.date())
+    nwis_data = Nwis()
+    dataset = nwis_data.get_data(site=str(site_id), start_date= lastsix,
+                                 end_date= t, data_type='iv')
+    return dataset
+
 
 def create_figure(dataset, variable):
     df = dataset.to_pandas()
@@ -134,3 +148,28 @@ def create_figure(dataset, variable):
                                                                         dataset.attrs['site_code']))
     return plot
 
+
+def dyn_figures(dataset):
+    plot_dict = {}
+    plot_list = []
+    df = dataset.to_pandas()
+    for i in df.columns:
+        idf = df[str(i)]
+        ylab ='{} ({})'.format(str.title(dataset[i].variable_name),dataset[i].variable_unit)
+        xlab ='Date'
+        plot = idf.hvplot.line(xlabel= xlab, ylabel=ylab,
+                               title='{} Observation at USGS Gage {}'.format(str.title(dataset[i].variable_name),
+                                                                             dataset.attrs['site_code']))
+        plot_dict.update({"{}".format(str(dataset[i].variable_name)): plot})
+
+    for plot in plot_dict:
+        vplot = plot_dict[plot]
+        plot_list.append(vplot)
+
+    if len(plot_list) == 1:
+        ncols = 1
+    else:
+        ncols = 2
+
+    layout = hv.Layout(plot_list).cols(ncols)
+    return layout
