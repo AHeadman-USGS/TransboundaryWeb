@@ -1,5 +1,6 @@
 from datetime import datetime, timedelta
 import dataretrieval.nwis as nwis
+from bokeh.models.formatters import DatetimeTickFormatter
 import hvplot.pandas
 import xarray as xr
 import pandas as pd
@@ -129,12 +130,12 @@ def nwis_set(site_id):
 
 def nwis_set_iv(site_id):
     t = datetime.now()
-    lastsix = t - timedelta(180)
+    lastsix = t - timedelta(31)
     t = str(t.date())
     lastsix = str(lastsix.date())
     nwis_data = Nwis()
-    dataset = nwis_data.get_data(site=str(site_id), start_date= lastsix,
-                                 end_date= t, data_type='iv')
+    dataset = nwis_data.get_data(site=str(site_id), start_date=lastsix,
+                                 end_date=t, data_type='iv')
     return dataset
 
 
@@ -143,13 +144,14 @@ def create_figure(dataset, variable):
     df = df[variable]
     ylab ='{} ({})'.format(str.title(dataset[variable].variable_name),dataset[variable].variable_unit)
     xlab ='Date'
-    plot = df.hvplot.line(xlabel= xlab, ylabel=ylab,
+    plot = df.hvplot.line(xlabel=xlab, ylabel=ylab,
                           title='{} Observation at USGS Gage {}'.format(str.title(dataset[variable].variable_name),
                                                                         dataset.attrs['site_code']))
     return plot
 
 
 def dyn_figures(dataset):
+    formatter = DatetimeTickFormatter(months='%b')
     plot_dict = {}
     plot_list = []
     df = dataset.to_pandas()
@@ -157,7 +159,7 @@ def dyn_figures(dataset):
         idf = df[str(i)]
         ylab ='{} ({})'.format(str.title(dataset[i].variable_name),dataset[i].variable_unit)
         xlab ='Date'
-        plot = idf.hvplot.line(xlabel= xlab, ylabel=ylab,
+        plot = idf.hvplot.line(xlabel= xlab, ylabel=ylab, xformatter=formatter,
                                title='{} Observation at USGS Gage {}'.format(str.title(dataset[i].variable_name),
                                                                              dataset.attrs['site_code']))
         plot_dict.update({"{}".format(str(dataset[i].variable_name)): plot})
